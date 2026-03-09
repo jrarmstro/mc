@@ -1,8 +1,9 @@
 chunky:1.4.40
 # coreprotect paywalls releases for the latest MC version; build it from source via `./scripts/build-latest-coreprotect.sh`
-#essentialsx:2.21.2
+essentialsx:Oa9ZDzZq # 2.21.2
+essentialsx-chat-module:BdLUtz0O # 2.21.2
 griefprevention:16.18.6
-#luckperms:v5.5.17-bukkit
+luckperms:OrIs0S6b # v5.5.17-bukkit
 vaultunlocked:2.19.0
 worldedit:7.4.0
 worldguard:7.0.15

@@ -23,12 +23,14 @@ services:
       DIFFICULTY: "normal"
       OPS: |
         mrdarthpyro
-        therealjoey
+        reallyjoey
+      VIEW_DISTANCE: 16
 
       MODRINTH_PROJECTS: "@/mods.txt"
       APPLY_EXTRA_FILES: |
         config</extra-config/config/paper-global.yml
         plugins/GriefPreventionData</extra-config/plugins/GriefPreventionData/config.yml
+        plugins/LuckPerms</extra-config/plugins/LuckPerms/config.yml
         plugins/WorldGuard</extra-config/plugins/WorldGuard/config.yml
         plugins/bStats</extra-config/plugins/bStats/
         ./</extra-config/wepif.yml
