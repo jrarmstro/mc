@@ -1,0 +1,29 @@
+name: default
+permissions:
+- bookgui.book.info
+- bookgui.open.*
+- bookgui.open.self
+- essentials.afk
+- essentials.afk.auto
+- essentials.back
+- essentials.back.onteleport
+- essentials.balance
+- essentials.delhome
+- essentials.home
+- essentials.motd
+- essentials.pay
+- essentials.rules
+- essentials.sethome
+- essentials.sethome.multiple
+- essentials.tpa
+- essentials.tpacancel
+- essentials.tpaccept
+- essentials.tpahere
+- essentials.tpdeny
+- essentials.warp
+- griefprevention.abandonallclaims
+- griefprevention.buysellclaimblocks
+- griefprevention.claims
+- griefprevention.createclaims
+- griefprevention.trapped
+

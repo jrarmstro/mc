@@ -7,28 +7,28 @@ GriefPrevention:
     world_the_end: -1
   Claims:
     Mode:
-      world_nether: Disabled
+      world_nether: Survival
       world: Survival
-      world_the_end: Disabled
+      world_the_end: Survival
     PreventGlobalMonsterEggs: true
     PreventTheft: true
-    HoppersRequireBuildTrust: false
+    HoppersRequireBuildTrust: true
     ProtectCreatures: true
     PreventButtonsSwitches: true
     LockWoodenDoors: false
     LockTrapDoors: false
-    LockFenceGates: false
+    LockFenceGates: true
     EnderPearlsRequireAccessTrust: false
     RefundDeniedEnderPearls: true
     RaidTriggersRequireBuildTrust: false
     ProtectHorses: true
     ProtectDonkeys: true
     ProtectLlamas: true
-    InitialBlocks: 50
+    InitialBlocks: 120
     Claim Blocks Accrued Per Hour:
-      Default: 100
+      Default: 60
     Max Accrued Claim Blocks:
-      Default: 80000
+      Default: 40000
     Accrued Idle Threshold: 0
     AccruedIdlePercent: 0
     AbandonReturnRatio: 1.0
@@ -50,7 +50,7 @@ GriefPrevention:
       AutomaticNatureRestoration:
         SurvivalWorlds: false
     AllowTrappedInAdminClaims: false
-    MaximumNumberOfClaimsPerPlayer: 0
+    MaximumNumberOfClaimsPerPlayer: 100
     CreationRequiresWorldGuardBuildPermission: true
     VillagerTradingRequiresPermission: false
     CommandsRequiringAccessTrust: /sethome
@@ -94,13 +94,13 @@ GriefPrevention:
       NonPvPWorlds: false
     ProtectPetsOutsideLandClaims: false
   Economy:
-    ClaimBlocksMaxBonus: 0
-    ClaimBlocksPurchaseCost: 0.0
-    ClaimBlocksSellValue: 0.0
+    ClaimBlocksMaxBonus: 80000
+    ClaimBlocksPurchaseCost: 1.0
+    ClaimBlocksSellValue: 1.0
   ProtectItemsDroppedOnDeath:
     PvPWorlds: false
     NonPvPWorlds: false
-  BlockLandClaimExplosions: false
+  BlockLandClaimExplosions: true
   BlockSurfaceCreeperExplosions: false
   BlockSurfaceOtherExplosions: false
   LimitSkyTrees: false

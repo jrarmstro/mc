@@ -1,0 +1,51 @@
+# File: buyhome_vault.sk
+# Place in /plugins/Skript/scripts/
+
+options:
+  base_multiplier: 300
+  max_total_homes: 10
+
+command /buyhome [<text>]:
+    trigger:
+        # Initialize player's extra homes
+        if {extra_homes.%player%} is not set:
+            set {extra_homes.%player%} to 0
+
+        # Current max homes = 1 free + extra purchased
+        set {_current_max} to 1 + {extra_homes.%player%}
+
+        # Calculate next slot cost
+        set {_next_cost} to {@base_multiplier} * ({_current_max} + 1)
+
+        # Handle /buyhome check
+        if arg-1 is "check":
+            if {_current_max} >= {@max_total_homes}:
+                send "&cYou already have the maximum of {@max_total_homes} home slots!"
+            else:
+                send "&aYou currently have %{_current_max}% home slots."
+                send "&aNext extra slot will cost $%{_next_cost}%."
+                send "&aMaximum home slots allowed: {@max_total_homes}."
+            stop
+
+        # Enforce max homes limit
+        if {_current_max} >= {@max_total_homes}:
+            send "&cYou already have the maximum of {@max_total_homes} home slots!"
+            stop
+
+        # Check if player has enough money
+        if money of player >= {_next_cost}:
+            # Deduct money
+            remove {_next_cost} from player's balance
+
+            # Add extra home slot
+            add 1 to {extra_homes.%player%}
+
+            # Grant permission for new max homes
+            set {_new_max} to 1 + {extra_homes.%player%}
+            execute console command "lp user %player% permission set essentials.sethome.multiple.%{_new_max}% true"
+
+            send "&aYou bought 1 extra home slot for $%{_next_cost}%!"
+            send "&aYou now have %{_new_max}% home slots (max {@max_total_homes})."
+        else:
+            send "&cYou need $%{_next_cost}% to buy the next home slot!"
+

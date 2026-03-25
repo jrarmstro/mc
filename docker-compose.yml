@@ -19,8 +19,8 @@ services:
       MEMORY: "6G"
 
       # Server Properties
-      MOTD: "Joel's minecraft server"
-      DIFFICULTY: "normal"
+      MOTD: "Electric Mayhem"
+      DIFFICULTY: "hard"
       OPS: |
         mrdarthpyro
         reallyjoey
@@ -28,10 +28,20 @@ services:
 
       MODRINTH_PROJECTS: "@/mods.txt"
       APPLY_EXTRA_FILES: |
+        ./</extra-config/bukkit.yml
+        ./</extra-config/commands.yml
+        ./</extra-config/spigot.yml
+        ./</extra-config/wepif.yml
         config</extra-config/config/paper-global.yml
+        plugins/BookGUI/books</extra-config/plugins/BookGUI/books/
+        plugins/DiscordSRV</extra-config/plugins/DiscordSRV/config.yml
+        plugins/Essentials</extra-config/plugins/Essentials/config.yml
+        plugins/Essentials</extra-config/plugins/Essentials/motd.txt
+        plugins/Essentials</extra-config/plugins/Essentials/rules.txt
         plugins/GriefPreventionData</extra-config/plugins/GriefPreventionData/config.yml
         plugins/LuckPerms</extra-config/plugins/LuckPerms/config.yml
+        plugins/LuckPerms/yaml-storage/groups</extra-config/plugins/LuckPerms/yaml-storage/groups/
+        plugins/Skript/scripts</extra-config/plugins/Skript/scripts/
         plugins/WorldGuard</extra-config/plugins/WorldGuard/config.yml
         plugins/bStats</extra-config/plugins/bStats/
-        ./</extra-config/wepif.yml
 

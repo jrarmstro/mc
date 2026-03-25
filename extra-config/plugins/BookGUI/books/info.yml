@@ -1,0 +1,26 @@
+title: Server Info
+author: Admin
+pages:
+- |
+  <bold>Table of Contents</bold>
+
+  <click:change_page:2>1. Economy</click>
+- |
+  <bold>Economy</bold>
+  The economy is based on claim blocks. You earn 60 claim blocks per hour.
+  
+  Buy and sell claim blocks with <blue>/buyclaimblocks</blue> and <blue>/sellclaimblocks</blue>.
+  
+  1 claim block is worth <dark_green>$1</dark_green>.
+- |
+  You can check your money with <blue>/balance</blue>, and your claim blocks with <blue>/claimlist</blue>.
+- |
+  You can use your money to invoke the following commands:
+  - <blue>/back</blue>: <dark_green>$60</dark_green> 
+  - <blue>/home</blue>: <dark_green>$15</dark_green>
+  - <blue>/sethome</blue>: <dark_green>$120</dark_green>
+  - <blue>/tpa</blue>: <dark_green>$30</dark_green>
+  - <blue>/tpahere</blue>: <dark_green>$30</dark_green>
+  - <blue>/warp</blue>: <dark_green>$10</dark_green>
+  - <blue>/buyhome</blue>: see <blue>/buyhome check</blue> for pricing
+
