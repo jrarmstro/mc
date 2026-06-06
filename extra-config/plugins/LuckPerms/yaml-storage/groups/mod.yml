@@ -1,0 +1,11 @@
+name: mod
+permissions:
+  - essentials.kick
+  - essentials.mute
+  - essentials.tempban
+parents:
+  - default
+prefixes:
+  100:
+    prefix: "&2[Mod] "
+

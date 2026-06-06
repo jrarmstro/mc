@@ -26,4 +26,5 @@ permissions:
 - griefprevention.claims
 - griefprevention.createclaims
 - griefprevention.trapped
+- pvpmanager.command.pvp
 

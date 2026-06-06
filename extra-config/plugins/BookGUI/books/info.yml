@@ -4,7 +4,20 @@ pages:
 - |
   <bold>Table of Contents</bold>
 
-  <click:change_page:2>1. Economy</click>
+  <click:change_page:2>1. General Info</click>
+  <click:change_page:3>2. Land Claims</click>
+  <click:change_page:4>3. Economy</click>
+- |
+  <bold>General Info</bold>
+  Read the rules with <blue>/rules</blue>.
+- |
+  <bold>Land Claims</bold>
+  Protect your builds and chests with land claims.
+
+  Your first chest will be protected automatically.
+
+  Use a golden shovel to claim more land.
+  See <click:change_page:4>Economy</click> for info on gaining more claim blocks.
 - |
   <bold>Economy</bold>
   The economy is based on claim blocks. You earn 60 claim blocks per hour.

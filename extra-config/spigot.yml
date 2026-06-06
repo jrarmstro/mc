@@ -163,6 +163,8 @@ world-settings:
       tile: 50
       entity: 50
     verbose: false
+  world_the_end:
+    view-distance: 16
   worldeditregentempworld:
     verbose: false
 config-version: 12
